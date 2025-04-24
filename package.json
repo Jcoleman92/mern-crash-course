@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=development nodemon backend/server.js",
-    "build": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=production && npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
     "start": "node node_modules/cross-env/src/bin/cross-env.js NODE_ENV=production node backend/server.js"
   },
   "type": "module",
